@@ -1,0 +1,38 @@
+---
+title: "Hi! I'm Anna Ma "
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# About me 
+
+Hi there! Welcome to my website! 
+
+My name is Anna Ma and I'm currently a first year master student studying biostatistics at Columbia University, Mailman School of Public Health. As of right now I'm most interested in infectious and cancer research. 
+
+# My resume
+
+This is my [resume](resume.html)
+
+# My Professional Networks
+
+Here is my [github](https://github.com/Ym2813) page
+
+Here is my [linkedin](https://www.linkedin.com/in/anna-ma-2b9712225/)page
+
+Here is my [handshake](https://columbia.joinhandshake.com/users/35346926)page
+
+# Ways to contact me
+
+You can find my email on the top right corner! 
+
+# Just for fun
+
+Here is my cuties egg thief caught in action!
+
+<img src="image/IMG_8647.jpeg" style="width:75%">
+
+
+

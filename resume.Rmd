@@ -1,0 +1,69 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Education
+
+**Columbia University Mailman School of Public Health** 
+
+Master of Science, Biostatistics - Expected May 2023   
+
+
+**University of California, Santa Barbara (UCSB)**						                       
+Bachelor of Science, Financial Math and Statistics  - June 2020
+
+Bachelor of Arts, Philosophy - June 2020
+
+## Academic Experience
+
+**Numerical Analysis Project --Prediction of Option Premium in Stock Market**
+
+ - Translate research interest into mathematical problems 
+ - Find the appropriate numerical methods and develop plan for the project 
+ - Code with python to conduct the numerical analysis, which predicts call option premium in future given the current stock time and maturity
+ - Write the final report of the project
+
+
+**Linear Regression Project – Estimation and Prediction of Real Estate Value **
+
+ - Use data from the UC Irvine Machine Learning Repository to build a linear regression model 
+ - Build and analyze the model with R
+ - Analyze the statistical results and plots from the model 
+ - Record the results and test if it makes appropriate estimates and reasonable predictions
+ - Produced a written report for the project
+
+## Experience
+
+**Wangxing Big Data Technology Co., Ltd. ** - Oct 2020 ~ Jan 2021
+
+Data Analysis Intern  
+
+ - Research academic works on social network analysis
+ - Help designing the project
+ - Prepare data, including data entry and data cleaning
+ - Assist in building the model for social network analysis with Python and R
+ - Review and analyze the model result, adjust model accordingly
+
+**Yunnan Real Estate Appraisal Association** - Jul 2019 ~ Aug 2019
+
+Data Modeler Assistant   
+
+ - Assist in study design 
+ - Organize and prepare data 
+ - Assist in building the statistical model 
+ - Record  and analyze the model result 
+
+## Skills
+
+ - Technical: Proficient in Python, R, SQL, and SAS. 
+ - Experienced in Microsoft Office Word, PowerPoint, and Excel.  
+ - Language: Bilingual Mandarin, spoken and written
+
+
+
+
+Here's back to my [index](index.html) page 
