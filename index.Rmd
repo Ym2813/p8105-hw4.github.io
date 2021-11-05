@@ -6,32 +6,32 @@ output:
     toc_float: true
 ---
 
-## About me 
+### About Me 
 
 Hi there! Welcome to my website! 
 
 My name is Anna Ma and I'm currently a first year master student studying biostatistics at Columbia University, Mailman School of Public Health. As of right now I'm most interested in infectious and cancer research. 
 
-## My resume
+### Resume
 
 This is my [resume](resume.html) page. 
 
-## My Professional Networks
+### Professional Networks
 
 Here is my [github](https://github.com/Ym2813) page
 
 Here is my [linkedin](https://www.linkedin.com/in/anna-ma-2b9712225/) page
 
-## Ways to contact me
+### Contact Information
 
-You can find my email on the top right corner! 
+Click on the envelope icon on the top right corner and email me! 
 
-## Dashboard Plots
+### Dashboard Plots
 
 Here are some interesting [plots](Plotly.html)!
 
 
-## Just for fun ...  
+### Just for fun ...  
 
 Here is my cutest egg thief caught in action!
 
