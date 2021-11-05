@@ -1,11 +1,15 @@
 ---
-title: "About"
+title: "Dashboard"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-This website is about how cool the internet is!!
-
-here's back to my [index](index.html) page 
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+library(htmlwidgets)
+```

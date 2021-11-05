@@ -1,0 +1,52 @@
+---
+title: "Dashboard"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+```
+
+
+
+```{r}
+data("instacart")
+
+instacart %>%  
+  filter(department == "beverages") %>% 
+  count(aisle, name = "n_order_of_aisle") %>%
+  mutate(
+    aisle = factor(aisle),
+    aisle = fct_reorder(aisle,n_order_of_aisle)) %>%
+  plot_ly(x = ~aisle, y = ~n_order_of_aisle , color = ~aisle,text = ~n_order_of_aisle, type = "bar")
+
+```
+
+```{r}
+instacart %>%  
+  filter(aisle == "soft drinks") %>% 
+  count(product_name, name = "n_times_ordered") %>%
+  arrange(desc(n_times_ordered)) %>% 
+  slice(1:10) %>% 
+  mutate(product_name = fct_reorder(product_name,n_times_ordered)) %>%
+   plot_ly(x = ~product_name, y = ~n_times_ordered , type = "scatter", mode = "markers") 
+   
+
+```
+
+```{r}
+instacart %>%  
+  filter(department == "beverages") %>% 
+  group_by(aisle) %>%
+  mutate(
+    aisle = fct_reorder(aisle, order_hour_of_day)) %>% 
+  plot_ly(x = ~aisle, y = ~order_hour_of_day, color = ~aisle, type = "box", colors = "viridis")
+
+```
+

@@ -1,0 +1,66 @@
+---
+title: "Plotly"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Number of Item Sold in each Aisle in the Beverage Department
+
+```{r}
+data("instacart")
+
+instacart %>%  
+  filter(department == "beverages") %>% 
+  count(aisle, name = "n_order_from_aisle") %>%
+  mutate(
+    aisle = factor(aisle),
+    aisle = fct_reorder(aisle,n_order_from_aisle)) %>%
+  plot_ly(x = ~aisle, 
+          y = ~n_order_from_aisle , 
+          color = ~aisle,
+          text = ~n_order_from_aisle, name = "",
+          hovertemplate = paste('%{x}', '<br>n_order_from_aisle: %{text:.2s}<br>'),
+          textposition = 'outside',
+          type = "bar")
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### The Ten Most Popular Item in Soft Drinks Aisle
+
+```{r}
+instacart %>%  
+  filter(aisle == "soft drinks") %>% 
+  count(product_name, name = "n_times_ordered") %>%
+  arrange(desc(n_times_ordered)) %>% 
+  slice(1:10) %>% 
+  mutate(product_name = fct_reorder(product_name,n_times_ordered)) %>%
+   plot_ly(x = ~product_name, y = ~n_times_ordered , type = "scatter", mode = "markers") 
+```
+
+### Distribution of the Order Hour for Beverage Department
+
+```{r}
+instacart %>%  
+  filter(department == "beverages") %>% 
+  group_by(aisle) %>%
+  mutate(
+    aisle = fct_reorder(aisle, order_hour_of_day)) %>% 
+  plot_ly(x = ~aisle, y = ~order_hour_of_day, color = ~aisle, type = "box", colors = "viridis")
+```
+
